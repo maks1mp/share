@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100%;
+    margin: 0 75px;
+    display: flex;
+    overflow: hidden;
+}
+
+.banner {
+    border-left: 3px solid #f01818;
+    flex: 1 1 60%;
+}
+
+.banner__desktop {
+    height: 100%;
+    width: 100%;
+    background: url('../assets/d-m-drink-background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.content {
+    flex: 1 1 40%;
+    display: flex;
+    align-content: center;
+}
+
+.content__center {
+    max-width: 482px;
+    text-align: center;
+    position: relative;
+    left: -20%;
+    align-self: center;
+}
+
+.content__logo {
+    margin: 0 auto;
+    height: 224px;
+}
+
+.content__logo img {
+    max-height: 100%;
+}
+
+.content__title {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+
+.content__video {
+    width: 100%;
+    height: 270px;
+}
+
+.content__video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.content__share-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__share-icons-item {
+    margin: 30px 7px;
+}
+
+.content__share-icons i {
+    font-size: 24px;
+    color: #f01818;
+}
+
+.content__share-text {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.content__share-btn {
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    background-color: #de0014;
+    box-shadow: 8px 8px 0px 2px #000;
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: #fff;
+    font-weight: 600;
+}
+
+.banner__mobile {
+    display: none;
+}
+
+.rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.rights__copyright {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: #000;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1600px) {
+    .content__video {
+        height: 220px;
+    }
+
+    .content__logo {
+        height: 150px;
+    }
+}
+
+@media (max-width: 1400) {
+    .content__video {
+        height: 150px;
+    }
+
+    .content__logo {
+        height: 150px;
+    }
+}
+
+@media (max-width: 1000) {
+    .content__video {
+        height: 120px;
+    }
+
+    .content__logo {
+        height: 120px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+    main {
+        overflow: visible;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content__center {
+        max-width: 100%;
+        padding: 30px;
+        position: static;
+        width: 100%;
+    }
+
+    .banner {
+        order: 2;
+        border: none;
+        margin: 30px 5px;
+        text-align: center;
+    }
+
+    .banner__desktop {
+        display: none;
+    }
+
+    .content__share-text {
+        display: none;
+    }
+
+    .banner__mobile {
+        display: block;
+        width: 100%;
+        border: 2px solid #f01818;
+    }
+
+    .rights {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: static;
+        padding: 0;
+    }
+
+    .rights__copyright {
+        order: 2;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
