@@ -76,7 +76,7 @@ main {
 }
 
 .content__share-icons i {
-    font-size: 24px;
+    font-size: 25px;
     color: #f01818;
 }
 
@@ -126,6 +126,14 @@ main {
     text-transform: uppercase;
 }
 
+.show-desktop {
+    display: block;
+}
+
+.show-mobile {
+    display: none;
+}
+
 @media (max-width: 1600px) {
     .content__video {
         height: 220px;
@@ -172,7 +180,7 @@ main {
     }
 
     .banner {
-        order: 2;
+        display: none;
         border: none;
         margin: 30px 5px;
         text-align: center;
@@ -182,14 +190,11 @@ main {
         display: none;
     }
 
-    .content__share-text {
-        display: none;
-    }
-
     .banner__mobile {
         display: block;
-        width: 100%;
+        width: calc(100% + 30px);
         border: 2px solid #f01818;
+        margin: 20px -15px 0;
     }
 
     .rights {
@@ -205,5 +210,13 @@ main {
         order: 2;
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+
+    .show-desktop {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
     }
 }
