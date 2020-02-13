@@ -21,7 +21,7 @@
                 <div class="content__logo">
                     <img src="./assets/d-m-drink-logo.png" alt="">
                 </div>
-                <img class="banner__mobile" src="./assets/d-m-drink-mobile-background.jpg" alt="">
+                <img class="banner__mobile" lazy="true" src="./assets/d-m-drink-mobile-background.jpg" alt="">
                 <h1 class="content__title">
                     Happy Valentine’s Day! Drinks on me!
                 </h1>
@@ -65,9 +65,14 @@
                         <br class="show-mobile">
                         EXCLUSIVE VALENTINE
                     </p>
-                    <button class="content__share-btn" id="share-btn">
-                        SHARE LOVE
-                    </button>
+                    <div class="content__controls">
+                        <a class="content__share-btn" id="share-btn">
+                            SHARE LOVE
+                        </button>
+                        <a href="./assets/DMunoz_get_love.mp4" download class="content__share-btn" id="share-btn">
+                            GET LOVE
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

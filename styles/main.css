@@ -102,6 +102,18 @@ main {
     font-family: "Montserrat";
     color: #fff;
     font-weight: 600;
+    text-decoration: none !important;
+}
+
+.content__controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__share-btn + .content__share-btn {
+    margin-left: 30px;
 }
 
 .banner__mobile {
@@ -218,5 +230,14 @@ main {
 
     .show-mobile {
         display: block;
+    }
+
+    .content__controls {
+        flex-direction: column;
+    }
+
+    .content__share-btn + .content__share-btn {
+        margin-left: 0;
+        margin-top: 30px;
     }
 }
